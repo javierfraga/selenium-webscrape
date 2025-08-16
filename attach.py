@@ -11,6 +11,14 @@ Usage:
 Description:
   Attaches to a running Chrome instance (debug port 9222) and ChromeDriver (port 9515).
   Drops you into an IPython REPL with `driver` ready for automation.
+  Chrome Debugging Port (9515):
+    - Without this port:
+    - You couldn’t connect to a preexisting tab or control an existing Chrome session
+    — you’d always have to launch Chrome from Selenium.
+  ChromeDriver Port (9222):
+    - Without this port:
+    - Your Python Selenium code can’t send WebDriver commands to Chrome.
+    - You’d only have DevTools access
 
 Workflow:
   1. On the host machine, run:
